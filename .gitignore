@@ -1,0 +1,45 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Backend configuration (contains sensitive data)
+backend.hcl
+
+# Variable files that might contain secrets
+*.auto.tfvars
+secrets.tfvars
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Backup files
+*.backup
+*.bak
+
+# Temporary files
+.tmp/
+tmp/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# AWS credentials (should never be committed)
+.aws/
+credentials
+
+# Plan files
+*.tfplan
+plan.out
